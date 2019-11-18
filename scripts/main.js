@@ -53,7 +53,6 @@ var target = document.getElementById('msg-topo');
 var titles = [
     'a tal da ',
     'somos a ',
-    'motherf***ing ',
     'this is ',
     'bem vindo a '
 ];
