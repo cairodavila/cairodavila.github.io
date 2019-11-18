@@ -1,0 +1,124 @@
+html{
+	background-image: radial-gradient(white 70%, #adadad);
+	color: rgb(255, 110, 95);
+	font-family: rockwell, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	position: relative;
+	width: 700px;
+	margin: 30px auto;
+
+}
+
+
+.topo{
+	height: auto;
+	width: 500px;
+	margin: 0 auto;
+}
+
+
+.welcome{
+	display: table;
+	margin: 0 auto;
+}
+
+#msg-topo{
+	float: left;
+	color: #000;
+	font-family: canada-type-gibson, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
+#logo-topo{
+	float: left;
+	margin-top: 10px;
+	margin-left: 5px;
+	width: 100px;
+
+}
+
+.Slogan{
+	display: block;
+	position: relative;
+	right: 0;
+	margin-left: auto;
+	margin-top: -30px;
+	font-size: 25px;
+	text-align: right;
+	line-height: 35px;
+
+}
+
+
+#logo-maior{
+	display: block;
+	width: 500px;
+	margin: 0 auto;
+}
+
+#logo-maior:hover{
+	-webkit-filter: drop-shadow(12px 12px 25px rgba(255, 110, 95, 0.7));
+    filter: url(#drop-shadow-coral);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
+.em-breve{
+	margin: 50px 0;
+	font-size: 22px;
+	line-height: 5px;
+	text-align: right;
+	color: black;
+}
+
+.redes-sociais{
+
+	margin: 0 auto;
+	width: 120px;
+}
+
+#insta{
+	display: inherit;
+	width: 50px;
+	float: left;
+	margin-right: 20px;
+}
+
+#insta:hover{
+	-webkit-filter: drop-shadow(12px 12px 25px rgba(255, 110, 95, 0.5));
+    filter: url(#drop-shadow-coral);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
+#face{
+	display: block;
+	width: 50px;
+	float: right;
+	margin: 0 auto;
+
+}
+
+#face:hover{
+	-webkit-filter: drop-shadow(12px 12px 25px rgba(255, 110, 95, 0.5));
+    filter: url(#drop-shadow-coral);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
+.clearfix{
+    clear:both
+}
+
+footer{
+	display: table;
+	padding-top: 160px;
+	margin: 0 auto;
+}
