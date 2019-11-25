@@ -18,40 +18,49 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index, follow">
+
+
     <title>TYPE</title>
   </head>
 
-  <body>
+  <body onload = "startTimer()">
 
-	<header class="topo">
-		<div class="welcome">
-			<h1 id="msg-topo"></h1>
-			<img id="logo-topo" src="images/type-logo.png" alt="TYPE">
-		</div>	
-		<div class="clearfix"></div>
-
-		<div class="Slogan">
-			<h2>//make your<br>hype<br>//</br></br></h2>
-		</div>
-
-    <img id="logo-maior" src="images/type-logo.png" alt="TYPE logo - Caixa preta envolvendo a palavra TYPE em letras maiúsculas">
-	
+	<div class="Slogan">
+		<h1 id="make">//soon<br>//</br></h1>
+	</div>
+	<div class="display">
+		<div class="distortion"></div>
+		<img id="modelos" src="images/modelos/1.png">
+		<img id="logo-maior" src="images/type-logo.png" alt="TYPE logo - Caixa preta envolvendo a palavra TYPE em letras maiúsculas">
+		<!--<button type="button" onclick="displayPreviousImage()">Previous</button>
+		<button type="button" onclick="displayNextImage()">Next</button>-->
+	</div>
 <!--tirar isso depois-->
 	<div class="em-breve">
-		<p>//em breve.</p>
-		<p tabindex="-1" title="nosso @ nas redes é @type.br">enquanto isso,</p><p>segue nossos perfis e vê o </p>
-		<p>que a gente tá fazendo</p>
-		<p>//</p>
+		<p>//inscreva seu perfil e<br>
+		concorra a descontos<br>
+		no lançamento<br>
+		//</br></br></br></p>
+
 	</div>
-</header>
+
+	<div class="form">
+
+		<input type="text" name="name" autocomplete="off" id="nameField" required />
+		<label for="name" class="labelname">
+			<span class="contentname">@seu.insta</span>
+
+		</label>
+	</div>
+<!--ícones das redes-->
 	<div class="redes-sociais">
 
 		
-		<a class="hover-lib" href="https://www.instagram.com/type.br/" id="images/insta-like.png" title="@type.br">
+		<a class="hover-lib" href="https://www.instagram.com/type.br/" target="_blank" title="@type.br">
 			<img id="insta" src="images/insta-logo.svg" alt="Logo do Instagram">
 		</a>
 	
-		<a class="hover-lib" href="https://www.facebook.com/type.85/" title="TYPE">
+		<a class="hover-lib" href="https://www.facebook.com/type.85/" target="_blank" title="TYPE">
 			<img id="face" src="images/face-logo.svg" alt="Logo do Facebook">
 		</a>
 		<div class="clearfix"></div>
@@ -66,7 +75,9 @@
 	<script type="text/javascript" src="scripts/hover-lib.js"></script>
 	<script src="scripts/main.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js" integrity="sha256-Wua0LsQkGDEeIkbmBNjj9wcThJh5uCD6R8+5YQhXveQ=" crossorigin="anonymous"></script>
+	<script type = "text/javascript" src="scripts/change-images.js"></script>
 
 	<svg height="0" xmlns="http://www.w3.org/2000/svg">
 		<filter id="drop-shadow-coral">

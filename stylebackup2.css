@@ -15,48 +15,30 @@ body{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	justify-content: center;
-	width: 50%;
-	max-width: 30rem;
-	min-width: 20rem;
-	margin: 0.2rem auto;
-
+	justify-content: space-around;
+	width: 100%;
+	margin: 30px auto;
 }
 
 
 .Slogan{
 	display: flex;
-	align-self: flex-end;
+	align-items: flex-end;
+	flex-direction: column;
+	width: 56%;
+	margin-top: -30px;
 	font-size: 25px;
-	font-size: 1.5em;
 	text-align: right;
-	line-height: 2em;
+	line-height: 55px;
 
 }
-/* https://stackoverflow.com/questions/6490252/vertically-centering-a-div-inside-another-div */
-.display{
-position: relative;
-	width: 100%;
-	border: 2.3rem solid black;
-}
- 
+
+
 #logo-maior{
-	width: 70%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
 }
-
-#modelos{
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center;
-}
-
 
 #logo-maior:hover{
 	-webkit-filter: drop-shadow(12px 12px 25px rgba(255, 110, 95, 0.7));
@@ -66,13 +48,10 @@ position: relative;
 }
 
 .em-breve{
-	height: 8rem;
-	align-self: flex-end;
-	margin: 20px 0 0;
+	margin: 50px 0;
+	width: 56%;
 	font-size: 22px;
-	font-size: 1.4rem;
-	line-height: 22px;
-	line-height: 1.4rem;
+	line-height: 5px;
 	text-align: right;
 	color: black;
 }
@@ -81,8 +60,6 @@ position: relative;
 	width: 36%;
 	position: relative;
 	height: 50px;
-	overflow: hidden;
-	background: transparent;
 
 }
 
@@ -90,10 +67,8 @@ position: relative;
 	width: 100%;
 	height: 100%;
 	color: #ff6e5f;
-	padding-top: 25px;
+	padding-top: 20px;
 	border: none;
-	outline: none;
-	background: transparent;
 	
 }
 
@@ -116,29 +91,21 @@ position: relative;
 	height: 100%;
 	width: 100%;
 	border-bottom: 3px solid #ff6e5f;
-	transform: translateX(-100%);
-	transition: transform 0.5s ease;
+	transform: translateX(-150%);
 }
 
-.contentname{
+.content-name{
 	position: absolute;
-	bottom: 0.2rem;
+	bottom: 5px;
 	left: 0px;
 	transition: all 0.3s ease;
 }
 
-.form input:focus + .labelname .contentname,
-.form input:valid + .labelname .contentname{
+.form input:focus + .label-name .content-name{
 	transform: translateY(-150%);
-	font-size: 0.8rem;
-	color: #000000;
+	font-size: 14px;
+	color: aqua;
 } 
-
-.form input:focus + .labelname::after,
-.form input:valid + .labelname::after{
-	transform: translateX(0%);
-
-}
 
 
 .redes-sociais{
@@ -182,6 +149,6 @@ position: relative;
 
 footer{
 	display: table;
-	text-align: center;
+	padding-top: 160px;
 	margin: 0 auto;
 }

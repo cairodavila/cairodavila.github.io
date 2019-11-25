@@ -48,18 +48,4 @@ face.onmouseleave = function() {
       face.setAttribute ('src','images/face-logo.svg');
 }
 
-/* mudar texto do cabeçalho */
-var target = document.getElementById('msg-topo');
-var titles = [
-    'a tal da ',
-    'somos a ',
-    'this is ',
-    'bem vindo a '
-];
-
-function newTitle () {
-    var i = (Math.random() * titles.length) | 0;
-    target.innerText = titles[i];
-}
-
-newTitle();
+/* mudar imagem do display */
