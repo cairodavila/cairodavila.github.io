@@ -2,6 +2,19 @@
 	box-sizing: border-box;
   }
 /* estilização*/
+p::selection {
+	background: #ff6e5f; /* WebKit/Blink Browsers */
+  }
+p::-moz-selection {
+	background: #ff6e5f; /* Gecko Browsers */
+  }
+h1::selection {
+	background: #212121; /* WebKit/Blink Browsers */
+  }
+h1::-moz-selection {
+	background: #212121; /* Gecko Browsers */
+  }
+
 html{
 	background-image: radial-gradient(white 70%, #adadad);
 	color: #ff6e5f;
