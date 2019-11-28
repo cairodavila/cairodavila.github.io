@@ -3,18 +3,19 @@
 var myImage = document.querySelector('img#logo-maior');
 
 myImage.onmouseenter = function() {
-    var mySrc = myImage.getAttribute('src');
+      myImage.classList.remove('transition2');
+      myImage.setAttribute('class', 'transition1');
 
-      myImage.setAttribute ('src','images/type-logo-coral.png');
-
+   myImage.setAttribute ('src','images/type-logo-coral.png');
 }
+
 
 myImage.onmouseleave = function() {
-    var mySrc = myImage.getAttribute('src');
+  myImage.classList.remove('transition1');
+  myImage.setAttribute('class', 'transition2');
 
-      myImage.setAttribute ('src','images/type-logo.png');
+myImage.setAttribute ('src','images/type-logo.png');
 }
-
 
 /* mudar cor do insta */
 var insta = document.querySelector('img#insta');

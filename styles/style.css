@@ -2,17 +2,21 @@
 	box-sizing: border-box;
   }
 /* estilização*/
-p::selection {
+p::selection, .display::selection {
 	background: #ff6e5f; /* WebKit/Blink Browsers */
+	color: #ffffff
   }
-p::-moz-selection {
+p::-moz-selection, .display::-moz-selection {
 	background: #ff6e5f; /* Gecko Browsers */
+	color: #ffffff
   }
 h1::selection {
 	background: #212121; /* WebKit/Blink Browsers */
+	color: #ffffff
   }
 h1::-moz-selection {
 	background: #212121; /* Gecko Browsers */
+	color: #ffffff
   }
 
 html{
@@ -21,6 +25,7 @@ html{
 	font-family: rockwell, sans-serif;
 	font-weight: 700;
 	font-style: normal;
+	scroll-behavior: smooth;
 
 }
 
@@ -50,15 +55,50 @@ body{
 .display{
 position: relative;
 	width: 100%;
-	border: 2.3rem solid black;
+	border: 2.3em solid black;
+	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5), 20px 20px 100px rgba(0, 0, 0, 0.2), 3px 3px 10px rgba(0, 0, 0, 0.6);
 }
- 
+ .display{
+	animation: fade 2s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+ }
+
+/*.display:hover{
+	animation: sobre 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+}*/
+
+
+body{
+	animation: fade 2s cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
+}
+
+@keyframes fade{
+	from{
+		transform: scale(1.2);
+		opacity: 0;
+	}
+	to{
+		transform: scale(1);
+		opacity: 1;
+
+	}
+}
+
+@keyframes sobre{
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(1.05);
+	}
+
+}
+
 #logo-maior{
 	width: 70%;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	top: 35%;
+	left: 15%;
+	cursor: none ;
 
 }
 
@@ -68,6 +108,7 @@ position: relative;
 	height: 100%;
 	object-fit: cover;
 	object-position: center;
+	pointer-events: none;
 }
 
 
@@ -78,6 +119,43 @@ position: relative;
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
 
+.transition1{
+	animation: fadeIn1 0.5s; 
+	-webkit-animation: fadeIn1 0.5s ; 
+	animation-fill-mode: forwards;
+
+	opacity: 1;
+  }
+  
+  @keyframes fadeIn1{
+   from{
+   transform: scale(1);
+  }
+   to{
+	transform: scale(1.2);
+   }
+  }
+  
+  
+   .transition2{
+	 animation: fadeIn2 1.0s; 
+	-webkit-animation: fadeIn2 1.0s ;
+	animation-fill-mode: forwards;
+
+	 opacity: 1;
+   }
+  
+   @keyframes fadeIn2{
+	 0%{
+		transform: scale(1.2);
+
+	 }
+
+	100%{
+		transform: scale(1);
+
+	}
+   }
 .em-breve{
 	height: 8rem;
 	align-self: flex-end;
